@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
 import actionDefs from '../actions/actionDefs'
-import securityReducer from './security.reducer'
+import reviewsReducer from './reviews.reducer'
 
 const appReducer = combineReducers({
   router: routerReducer,
-  security: securityReducer,
+  reviews: reviewsReducer,
 })
 
 export default (state, action) => {
